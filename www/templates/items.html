@@ -1,0 +1,18 @@
+<ion-view title="Items">
+
+    <ion-nav-buttons side="right">
+        <button class="right button button-icon icon ion-plus" ng-click="insert()"></button>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <ion-list>
+            <ion-item class="item item-button-right" ng-repeat="item in items">
+                {{item.name}}
+                <button class="button button-assertive" ng-click="delete(item)">
+                    <i class="icon ion-trash-a"></i>
+                </button>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
